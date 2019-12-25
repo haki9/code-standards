@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>flow · GitBook</title>
+        <title>Introduction · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="flow.html" />
     
-    <link rel="prev" href="./" />
     
 
     </head>
@@ -87,7 +87,7 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="./">
+        <li class="chapter active" data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -100,7 +100,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="flow.html">
+        <li class="chapter " data-level="1.2" data-path="flow.html">
             
                 <a href="flow.html">
             
@@ -143,7 +143,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >flow</a>
+        <a href="." >Introduction</a>
     </h1>
 </div>
 
@@ -158,42 +158,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h6 id="branch">Branch</h6>
-<ul>
-<li><blockquote>
-<ul>
-<li><p><strong>master</strong></p>
-</li>
-<li><p><strong>dev</strong></p>
-</li>
-<li><p><strong>release / staging</strong></p>
-</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-<h4 id="creating-a-feature-branch">Creating a feature branch </h4>
-<pre><code>git checkout -b myfeature dev
-</code></pre><h4 id="incorporating-a-finished-feature-on-develop"></h4>
-<h4 id="incorporating-a-finished-feature-on-develop">Incorporating a finished feature on develop </h4>
-<p>Switched to branch &apos;dev&apos;</p>
-<pre><code>git checkout dev
-</code></pre><p>Summary of changes</p>
-<pre><code>git merge --no-ff my_feature
-</code></pre><p>Deleted branch my_feature</p>
-<pre><code>git branch -d my_feature
-</code></pre><p>Push</p>
-<pre><code>git push origin develop
-</code></pre><p><img src="assets/Screen Shot 2019-12-25 at 15.33.33.png" alt=""></p>
-<h4 id="creating-a-release-branch">Creating a release branch </h4>
-<pre><code>git checkout -b release-1.2 develop
-</code></pre><h4 id="finishing-a-release-branch"></h4>
-<h4 id="finishing-a-release-branch">Finishing a release branch </h4>
-<pre><code>git checkout master
-</code></pre><pre><code>git merge --no-ff release-1.2
-</code></pre><pre><code>git tag v1.2
-</code></pre><pre><code>git branch -d release-1.2
-</code></pre>
+                                <h1 id="cheat-sheet">Cheat Sheet</h1>
+<h6 id=""><img src="assets/git-cheat-sheet-large01.png" alt=""></h6>
+
                                 
                                 </section>
                             
@@ -220,10 +187,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
+                <a href="flow.html" class="navigation navigation-next navigation-unique" aria-label="Next page: flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -232,7 +199,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"flow","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flow.md","mtime":"2019-12-25T10:46:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T10:50:52.043Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"flow","level":"1.2","depth":1,"path":"flow.md","ref":"flow.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-12-25T10:48:50.863Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T10:50:52.043Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
