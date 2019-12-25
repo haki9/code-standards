@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>flow · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,6 +58,8 @@
 
     
     
+    <link rel="prev" href="./" />
+    
 
     </head>
     <body>
@@ -85,12 +87,25 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
                     
                     Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="flow.html">
+            
+                <a href="flow.html">
+            
+                    
+                    flow
             
                 </a>
             
@@ -128,7 +143,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >flow</a>
     </h1>
 </div>
 
@@ -143,33 +158,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gitboook-publishable-template">gitboook-publishable-template</h1>
-<p>template to use for publishing gitbooks to github.com</p>
-<p>You can duplicate this repository 
-<a href="https://help.github.com/articles/duplicating-a-repository/" target="_blank">https://help.github.com/articles/duplicating-a-repository/</a></p>
-<ol>
-<li>Create a new repository on github.com  </li>
-</ol>
-<ol>
-<li><p>Create a bare clone of this repository
-<code>git clone --bare https://github.com/rebeccapeltz/gitbook-publishable-template.git</code></p>
+                                <h6 id="branch">Branch</h6>
+<ul>
+<li><blockquote>
+<ul>
+<li><p><strong>master</strong></p>
 </li>
-<li><p>Mirror-push to new repository
-<code>cd gitbook-publishable-template.git</code><br><code>git push --mirror https://github.com/useraccount/new-repository.git</code>  </p>
+<li><p><strong>dev</strong></p>
 </li>
-<li><p>Remove the temporary repository create above<br><code>cd ..</code>
-<code>rm -rf old-repository.git</code></p>
+<li><p><strong>release / staging</strong></p>
 </li>
-</ol>
-<p>Alternatively, you can also just download a zipped file of this repository and then use standard commands to push to initialize and push to your new repository.  </p>
-<pre><code class="lang-bash">git init
-git add .
-git commit -m<span class="hljs-string">&quot;first commit&quot;</span>
-git remote add origin git@github.com:useraccount/new-repository.git  
-git push origin master
+</ul>
+</blockquote>
+</li>
+</ul>
+<h4 id="creating-a-feature-branch">Creating a feature branch </h4>
+<pre><code>git checkout -b myfeature dev
+</code></pre><h4 id="incorporating-a-finished-feature-on-develop"></h4>
+<h4 id="incorporating-a-finished-feature-on-develop">Incorporating a finished feature on develop </h4>
+<p>Switched to branch &apos;dev&apos;</p>
+<pre><code>git checkout dev
+</code></pre><p>Summary of changes</p>
+<pre><code>git merge --no-ff my_feature
+</code></pre><p>Deleted branch my_feature</p>
+<pre><code>git branch -d my_feature
+</code></pre><p>Push</p>
+<pre><code>git push origin develop
+</code></pre><p><img src="assets/Screen Shot 2019-12-25 at 15.33.33.png" alt=""></p>
+<h4 id="creating-a-release-branch">Creating a release branch </h4>
+<pre><code>git checkout -b release-1.2 develop
+</code></pre><h4 id="finishing-a-release-branch"></h4>
+<h4 id="finishing-a-release-branch">Finishing a release branch </h4>
+<pre><code>git checkout master
+</code></pre><pre><code>git merge --no-ff release-1.2
+</code></pre><pre><code>git tag v1.2
+</code></pre><pre><code>git branch -d release-1.2
 </code></pre>
-<p>Yay!</p>
-
                                 
                                 </section>
                             
@@ -196,6 +220,10 @@ git push origin master
 
             
                 
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -204,7 +232,7 @@ git push origin master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-12-25T10:27:42.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T10:38:50.204Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"flow","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flow.md","mtime":"2019-12-25T10:46:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-25T10:49:17.446Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
