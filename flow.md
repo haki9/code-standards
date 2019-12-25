@@ -44,6 +44,10 @@ git push origin dev
 
 # Process 1
 
+#### Incorporating a finished feature on release {#incorporating-a-finished-feature-on-develop}
+
+
+
 
 
 # Process 2
