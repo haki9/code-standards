@@ -46,30 +46,6 @@ git push origin dev
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Process 2
 
 #### Creating a release branch {#creating-a-release-branch}
