@@ -37,7 +37,7 @@ git branch -d my_feature
 Push
 
 ```
-git push origin develop
+git push origin dev
 ```
 
 ![](/assets/Screen Shot 2019-12-25 at 15.33.33.png)
@@ -45,7 +45,7 @@ git push origin develop
 #### Creating a release branch {#creating-a-release-branch}
 
 ```
-git checkout -b release-1.2 develop
+git checkout -b release-1.2 devhttps://haki9.github.io/code-standards/flow.html
 ```
 
 ####  {#finishing-a-release-branch}
