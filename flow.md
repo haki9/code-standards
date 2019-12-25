@@ -45,7 +45,7 @@ git push origin dev
 #### Creating a release branch {#creating-a-release-branch}
 
 ```
-git checkout -b release-1.2 devhttps://haki9.github.io/code-standards/flow.html
+git checkout -b release-1.2 dev
 ```
 
 ####  {#finishing-a-release-branch}
