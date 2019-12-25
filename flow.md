@@ -48,8 +48,6 @@ git push origin dev
 git checkout -b release-1.2 dev
 ```
 
-####  {#finishing-a-release-branch}
-
 #### Finishing a release branch {#finishing-a-release-branch}
 
 ```
