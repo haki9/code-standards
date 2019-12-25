@@ -6,13 +6,13 @@
   >
   > * **release / staging**
 
+####  {#creating-a-feature-branch}
+
 #### Creating a feature branch {#creating-a-feature-branch}
 
 ```
 git checkout -b myfeature dev
 ```
-
-####  {#incorporating-a-finished-feature-on-develop}
 
 #### Incorporating a finished feature on develop {#incorporating-a-finished-feature-on-develop}
 
@@ -41,6 +41,36 @@ git push origin dev
 ```
 
 ![](/assets/Screen Shot 2019-12-25 at 15.33.33.png)
+
+# Process 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Process 2
 
 #### Creating a release branch {#creating-a-release-branch}
 
