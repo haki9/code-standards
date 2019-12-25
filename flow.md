@@ -90,8 +90,7 @@ git merge --no-ff release-1.2
 git tag v1.2
 ```
 
-\`\`\`
-
+```
 git branch -d release-1.2  
-\`\`\`
+```
 
