@@ -46,7 +46,28 @@ git push origin dev
 
 #### Incorporating a finished feature on release {#incorporating-a-finished-feature-on-develop}
 
+Switched to branch 'dev'
 
+```
+git checkout dev
+```
+
+Summary of changes
+
+```
+git merge --no-ff my_feature
+```
+
+Deleted branch my\_feature
+
+```
+git branch -d my_feature
+```
+
+Push
+
+```
+git push origin dev
 
 
 
