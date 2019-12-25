@@ -62,37 +62,35 @@ Push
 
 ```
 git push origin release
+```
 
+```
+git tag v1.2
 ```
 
 # Process 2
 
 #### Creating a release branch {#creating-a-release-branch}
-```
 
+```
 git checkout -b release-1.2 dev
-
 ```
+
 #### Finishing a release branch {#finishing-a-release-branch}
-```
 
+```
 git checkout master
-
 ```
 
 ```
-
 git merge --no-ff release-1.2
-
 ```
 
 ```
-
 git tag v1.2
-
 ```
 
-```
+\`\`\`
 
 git branch -d release-1.2  
 \`\`\`
